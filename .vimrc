@@ -6,21 +6,20 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
 Plug 'mattn/emmet-vim'
+Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 
 " Setup
 
-:set number
-:set expandtab
-:set tabstop=4
-
-:set hlsearch
-:set incsearch
-
-syntax on
-colorscheme gruvbox
-set background=dark
+set number
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set softtabstop=4
+set autoindent
+set t_Co=256
 
 " Maps
 
